@@ -1,7 +1,7 @@
 /*
 Node script para crear la base (opcional) y la tabla en SQL Server usando `mssql`.
 Uso:
-  node mssql_init.js --server=192.168.1.5 --port=1433 --user=backEnd --password="user1234*" --database=ProyectoRedesDB
+  node mssql_init.js --server=192.168.1.6 --port=1433 --user=backEnd --password="user1234*" --database=ProyectoRedesDB
 
 Si tu usuario no tiene permisos para crear la base, primero crea la base con el script SQL y luego ejecuta con --database apuntando a la base existente.
 */

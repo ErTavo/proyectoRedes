@@ -60,7 +60,7 @@ Si quieres usar un SQL Server en lugar de SQLite, tienes dos opciones:
 ```powershell
 cd "c:\Users\gusjr\OneDrive\Documentos\udeo\SO-Redes\ProyectoRedes\back"
 npm install
-node mssql_init.js --server=192.168.1.5 --port=1433 --user=backEnd --password="user1234*" --database=ProyectoRedesDB
+node mssql_init.js --server=192.168.1.6 --port=1433 --user=backEnd --password="user1234*" --database=ProyectoRedesDB
 ```
 
 Notas de seguridad:
@@ -69,7 +69,7 @@ Notas de seguridad:
 ```powershell
 $env:MSSQL_USER = 'backEnd'
 $env:MSSQL_PASSWORD = 'user1234*'
-node mssql_init.js --server=192.168.1.5 --port=1433 --database=ProyectoRedesDB
+node mssql_init.js --server=192.168.1.6 --port=1433 --database=ProyectoRedesDB
 ```
 
 Ejemplo rápido de conexión en `index.js` si quieres que el backend use SQL Server en vez de SQLite (no lo cambié automáticamente):
@@ -80,7 +80,7 @@ const sql = require('mssql')
 const pool = await sql.connect({
   user: process.env.MSSQL_USER,
   password: process.env.MSSQL_PASSWORD,
-  server: '192.168.1.5',
+  server: '192.168.1.6',
   port: 1433,
   database: 'ProyectoRedesDB',
   options: { encrypt: false, trustServerCertificate: true }

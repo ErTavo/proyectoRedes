@@ -2,7 +2,7 @@
 // Si prefieres usar SQLite, pon `useMssql: false`.
 module.exports = {
   useMssql: true,
-  host: '192.168.1.5',
+  host: '192.168.1.6',
   port: 1433,
   user: 'backEnd',
   password: 'user1234*',
