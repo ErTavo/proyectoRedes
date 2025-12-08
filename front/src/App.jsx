@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const API_BASE = import.meta.env.MODE === 'production' ? '/api' : 'http://localhost:3000/api'
+const API_BASE = import.meta.env.MODE === 'production' ? '/api' : 'http://192.168.1.4:3000/api'
 
 export default function App(){
   const [items, setItems] = useState([])
